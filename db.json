@@ -1,0 +1,76 @@
+{
+  "results": [
+    {
+      "id": 1,
+      "history": {
+        "player": 1,
+        "computer": 4,
+        "winner": "computer"
+      }
+    },
+    {
+      "id": 2,
+      "history": {
+        "player": 4,
+        "computer": 3,
+        "winner": "player"
+      }
+    },
+    {
+      "id": 3,
+      "history": {
+        "player": 4,
+        "computer": 2,
+        "winner": "Player"
+      }
+    },
+    {
+      "id": 4,
+      "history": {
+        "player": 2,
+        "computer": 3,
+        "winner": "Computer"
+      }
+    },
+    {
+      "id": 5,
+      "history": {
+        "player": 4,
+        "computer": 3,
+        "winner": "Player"
+      }
+    },
+    {
+      "id": 6,
+      "history": {
+        "player": 2,
+        "computer": 3,
+        "winner": "Computer"
+      }
+    },
+    {
+      "id": 7,
+      "history": {
+        "player": 5,
+        "computer": 1,
+        "winner": "Player"
+      }
+    },
+    {
+      "id": 8,
+      "history": {
+        "player": 3,
+        "computer": 3,
+        "winner": "Tie"
+      }
+    },
+    {
+      "id": 9,
+      "history": {
+        "player": 5,
+        "computer": 5,
+        "winner": "Tie"
+      }
+    }
+  ]
+}

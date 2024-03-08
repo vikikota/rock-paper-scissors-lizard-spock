@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div id="main-container">
+            <!---------- MODAL----------->
+
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content" onkeypress="enterClose(event)">
+                    <span class="close">&times;</span>
+                    <div id="message-img"></div>
+                    <div id="messages"></div>
+                    <div id="messages-choices"></div>
+                </div>
+            </div>
+
+            <!---------- SCORES----------->
+            <div id="counter">
+                <div class="counter-div">
+                    <h4>COMPUTER:</h4>
+                    <h3><div id="AI-score">0</div></h3>
+                </div>
+                <div class="counter-div">
+                    <h4>PLAYER:</h4>
+                    <h3><div id="player-score">0</div></h3>
+                </div>
+
+                <div class="counter-div">
+                    <h4>ROUND:</h4>
+                    <h3><div id="turn-counter">0</div></h3>
+                </div>
+            </div>
+
+            <!---------- BUTTONS----------->
+            <div id="buttons">
+                <div class="image-div">
+                    <img
+                        src="images/rock.svg"
+                        id="rock"
+                        value="rock"
+                        alt="rock"
+                    />
+                    <h3>ROCK</h3>
+                </div>
+
+                <div class="image-div">
+                    <img
+                        src="images/paper.svg"
+                        id="paper"
+                        value="paper"
+                        alt="paper"
+                    />
+                    <h3>PAPER</h3>
+                </div>
+
+                <div class="image-div">
+                    <img
+                        src="images/scissors.svg"
+                        id="scissors"
+                        value="scissors"
+                        alt="scissors"
+                    />
+                    <h3>SCISSORS</h3>
+                </div>
+            </div>
+        </div>
+        <script src="kpo.js"></script>
+    </body>
+</html>

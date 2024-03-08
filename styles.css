@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@keyframes rotation {
+    50% {
+        transform: rotate(5deg);
+    }
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: #cccccc;
+}
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 30px 0 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#counter {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 35px;
+    margin: 5% 0;
+}
+
+.counter-div {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    padding: 10px;
+}
+
+.counter-div h4 {
+    font-family: 'Amatic SC';
+    font-size: 30px;
+}
+
+#counter h3 {
+    font-family: 'Amatic SC';
+    font-size: 40px;
+    color: #990000;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+    margin-top: 3%;
+}
+
+#buttons img {
+    width: 150px;
+    cursor: pointer;
+}
+#buttons img:hover {
+    scale: 1.2;
+}
+
+.image-div {
+    text-align: center;
+    font-family: 'Amatic SC';
+    font-size: 40px;
+}
+
+h4 {
+    font-family: 'Amatic SC';
+    font-size: 30px;
+}
+
+#message-img {
+    display: flex;
+    justify-content: center;
+}
+
+#messages {
+    font-family: 'Amatic SC';
+    font-size: 50px;
+    font-weight: 700;
+    color: #990000;
+    text-align: center;
+}
+
+#messages-choices {
+    font-family: 'Amatic SC';
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+
+.message-img-class {
+    text-align: center;
+    width: 150px;
+    margin: 0;
+}
+
+/* ROTATE*/
+.rotate {
+    animation: rotation 1s infinite linear;
+}
+
+/* RULES */
+#rules img {
+    width: 300px;
+}
+
+img {
+    width: 300px;
+}
+
+/* THE MODAL */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    scrollbar-gutter: #ccc;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    margin: 15% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 50%; /* Could be more or less, depending on screen size */
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #990000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#score-board {
+    text-align: left;
+    font-family: 'Amatic SC';
+    font-size: 21px;
+    width: 55%;
+    padding: 10px;
+    margin: 20px auto 0 auto;
+    font-weight: 700;
+    border: 2px solid white;
+    max-height: 200px;
+    overflow-y: scroll;
+}
