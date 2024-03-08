@@ -28,7 +28,6 @@ fetch('http://localhost:3000/results')
     })
     .catch((error) => console.log(error));
 
-
 // COUNTERS
 let turnCounter = 0;
 let playerCounter = 0;
@@ -113,7 +112,7 @@ function compare(event) {
         mainMessage(AiChoice, playerChoice);
         draw();
 
-        // AI WIN
+    // AI WIN
     } else if (AiChoice == 'paper' && playerChoice == 'rock') {
         mainMessage(AiChoice, playerChoice);
         sad();
@@ -196,7 +195,7 @@ function mainMessage(AiChoice, playerChoice) {
 // HAPPY MESSAGE
 function happy() {
     let happyImg = document.createElement('img');
-    happyImg.src = 'images/happy.svg';
+    happyImg.src = './images/happy.svg';
     happyImg.classList.add('message-img-class');
     messageImgDiv.append(happyImg);
     messagesDiv.textContent = `YOU WON THIS ROUND!`;
@@ -211,7 +210,7 @@ function happy() {
 
 function draw() {
     let drawImg = document.createElement('img');
-    drawImg.src = 'images/draw.svg';
+    drawImg.src = './images/draw.svg';
     drawImg.classList.add('message-img-class');
     messageImgDiv.append(drawImg);
     messagesDiv.textContent = `DRAW!`;
@@ -229,7 +228,7 @@ function draw() {
 
 function sad() {
     let sadImg = document.createElement('img');
-    sadImg.src = 'images/sad.svg';
+    sadImg.src = './images/sad.svg';
     sadImg.classList.add('message-img-class');
     messageImgDiv.append(sadImg);
     messagesDiv.textContent = `YOU LOST THIS ROUND!`;
