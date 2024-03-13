@@ -3,15 +3,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Rock Paper Scissors Lizard Spock</title>
+        <link rel="icon" type="image/x-icon" href="images/spock.ico" />
         <link rel="stylesheet" href="./styles.css" />
     </head>
     <body>
         <div id="main-container">
             <!---------- MODAL----------->
-
             <div id="myModal" class="modal">
-                <!-- Modal content -->
                 <div class="modal-content" onkeypress="enterClose(event)">
                     <span class="close">&times;</span>
                     <div id="message-img"></div>
@@ -19,29 +18,30 @@
                     <div id="messages-choices"></div>
                 </div>
             </div>
-<header>
-            <!---------- RULES----------->
-            <div id="rules">
-                <img src="./images/rules.svg" alt="rules">
-            </div>
-            <!---------- SCORES----------->
-            <div id="counter">
-                <div class="counter-div">
-                    <h4>COMPUTER:</h4>
-                    <h3><div id="AI-score">0</div></h3>
+            <header>
+                <!---------- RULES----------->
+                <div id="rules">
+                    <img src="./images/rules.svg" alt="rules" />
                 </div>
-                <div class="counter-div">
-                    <h4>PLAYER:</h4>
-                    <h3><div id="player-score">0</div></h3>
-                </div>
+                <!---------- SCORES----------->
+                <div id="counter">
+                    <div class="counter-div">
+                        <h4>COMPUTER:</h4>
+                        <h3><div id="AI-score">0</div></h3>
+                    </div>
+                    <div class="counter-div">
+                        <h4>PLAYER:</h4>
+                        <h3><div id="player-score">0</div></h3>
+                    </div>
 
-                <div class="counter-div">
-                    <h4>ROUND:</h4>
-                    <h3><div id="turn-counter">0</div></h3>
+                    <div class="counter-div">
+                        <h4>ROUND:</h4>
+                        <h3><div id="turn-counter">0</div></h3>
+                    </div>
                 </div>
-            </div>
-</header>
+            </header>
             <!---------- BUTTONS----------->
+            <div id="main-content">
             <div id="buttons">
                 <div class="image-div">
                     <img
@@ -83,7 +83,7 @@
                     <h3>LIZARD</h3>
                 </div>
 
-                 <div class="image-div">
+                <div class="image-div">
                     <img
                         src="./images/spock.svg"
                         id="spock"
@@ -92,7 +92,8 @@
                     />
                     <h3>SPOCK</h3>
                 </div>
-                <div id="score-board"></div>
+            </div>
+            <div id="score-board"></div>
             </div>
         </div>
         <script src="rpsls.js"></script>

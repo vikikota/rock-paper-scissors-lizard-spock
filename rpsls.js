@@ -14,7 +14,7 @@ function AiRandom() {
     }
 }
 
-fetch('http://localhost:3000/results')
+fetch('http://localhost:5000/results')
     .then((response) => response.json())
     .then((results) => {
         results.forEach((result) => {
@@ -34,7 +34,7 @@ let playerCounter = 0;
 let AICounter = 0;
 
 // THE MODAL
-var span = document.getElementsByClassName('close')[0];
+let span = document.getElementsByClassName('close')[0];
 
 span.onclick = function () {
     modal.style.display = 'none';
@@ -177,8 +177,6 @@ function compare(event) {
         mainMessage(AiChoice, playerChoice);
         happy();
     }
-
-    console.log(AiChoice, playerChoice);
 }
 
 // MESSAGES
@@ -186,7 +184,7 @@ function compare(event) {
 // MAIN MESSAGE
 function mainMessage(AiChoice, playerChoice) {
     modal.style.display = 'block';
-    messageChoicesDiv.textContent = `computer choice: ${AiChoice}   |   your choice: ${playerChoice}`;
+messageChoicesDiv.textContent = `computer choice: ${AiChoice}\n your choice: ${playerChoice}`;
 
     turnCounter++;
     turnCounterDiv.textContent = `${turnCounter}`;
@@ -268,7 +266,7 @@ function happyGameOver() {
 
     messageImgDiv.append(happyImg);
     messagesDiv.textContent = `YOU WON THE GAME!`;
-    messageChoicesDiv.textContent = `computer score: ${AICounter}   |   your score: ${playerCounter}`;
+    messageChoicesDiv.textContent = `computer score: ${AICounter} \n your score: ${playerCounter}`;
     modal.style.display = 'block';
 
     turnCounter = 0;
