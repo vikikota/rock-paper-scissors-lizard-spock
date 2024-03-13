@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="./styles.css" />
     </head>
     <body>
         <div id="main-container">
@@ -19,7 +19,11 @@
                     <div id="messages-choices"></div>
                 </div>
             </div>
-
+<header>
+            <!---------- RULES----------->
+            <div id="rules">
+                <img src="./images/rules.svg" alt="rules">
+            </div>
             <!---------- SCORES----------->
             <div id="counter">
                 <div class="counter-div">
@@ -36,7 +40,7 @@
                     <h3><div id="turn-counter">0</div></h3>
                 </div>
             </div>
-
+</header>
             <!---------- BUTTONS----------->
             <div id="buttons">
                 <div class="image-div">
@@ -68,8 +72,29 @@
                     />
                     <h3>SCISSORS</h3>
                 </div>
+
+                <div class="image-div">
+                    <img
+                        src="./images/lizard.svg"
+                        id="lizard"
+                        value="lizard"
+                        alt="lizard"
+                    />
+                    <h3>LIZARD</h3>
+                </div>
+
+                 <div class="image-div">
+                    <img
+                        src="./images/spock.svg"
+                        id="spock"
+                        value="spock"
+                        alt="spock"
+                    />
+                    <h3>SPOCK</h3>
+                </div>
+                <div id="score-board"></div>
             </div>
         </div>
-        <script src="kpo.js"></script>
+        <script src="rpsls.js"></script>
     </body>
 </html>
